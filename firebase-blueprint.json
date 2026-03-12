@@ -1,0 +1,78 @@
+{
+  "entities": {
+    "User": {
+      "title": "User Profile",
+      "description": "Stores user information and roles.",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "email": { "type": "string", "format": "email" },
+        "displayName": { "type": "string" },
+        "role": { "type": "string", "enum": ["admin", "voter"] },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["uid", "email", "role"]
+    },
+    "Election": {
+      "title": "Election",
+      "description": "Represents a voting event.",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "status": { "type": "string", "enum": ["upcoming", "active", "closed"] },
+        "startDate": { "type": "string", "format": "date-time" },
+        "endDate": { "type": "string", "format": "date-time" },
+        "positions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": { "type": "string" },
+              "title": { "type": "string" },
+              "candidates": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": { "type": "string" },
+                    "label": { "type": "string" },
+                    "voteCount": { "type": "number" }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["title", "status", "positions"]
+    },
+    "Vote": {
+      "title": "Vote",
+      "description": "A single vote cast by a user.",
+      "type": "object",
+      "properties": {
+        "voterUid": { "type": "string" },
+        "electionId": { "type": "string" },
+        "optionId": { "type": "string" },
+        "timestamp": { "type": "string", "format": "date-time" }
+      },
+      "required": ["voterUid", "electionId", "optionId", "timestamp"]
+    }
+  },
+  "firestore": {
+    "/users/{uid}": {
+      "schema": "User",
+      "description": "User profiles"
+    },
+    "/elections/{electionId}": {
+      "schema": "Election",
+      "description": "Election details and options"
+    },
+    "/votes/{voteId}": {
+      "schema": "Vote",
+      "description": "Individual votes, ID is voterUid_electionId to prevent duplicates"
+    }
+  }
+}

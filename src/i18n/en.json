@@ -1,0 +1,150 @@
+{
+  "nav": {
+    "elections": "Elections",
+    "results": "Results",
+    "security": "Security",
+    "signIn": "Sign In",
+    "signOut": "Sign Out",
+    "home": "VeriVote Home",
+    "toggleMenu": "Toggle Mobile Menu"
+  },
+  "common": {
+    "loading": "Verifying Identity",
+    "error": "Something went wrong",
+    "error_desc": "An unexpected error occurred. Please try refreshing the page.",
+    "refresh": "Refresh Application",
+    "close": "Close",
+    "cancel": "Cancel",
+    "remove": "Remove",
+    "status": {
+      "active": "Active",
+      "upcoming": "Upcoming",
+      "closed": "Closed"
+    },
+    "copyright": "© 2026 VeriVote Secure Systems. Democratic Integrity Guaranteed.",
+    "brandSymbol": "VeriVote Brand Symbol"
+  },
+  "landing": {
+    "tagline": "The Future of Democracy",
+    "title": "Secure. Transparent.",
+    "unstoppable": "Unstoppable.",
+    "description": "VeriVote leverages advanced cryptographic verification to ensure every vote is counted exactly as cast.",
+    "getStarted": "Get Started",
+    "learnMore": "Learn More",
+    "register": "Register",
+    "features": {
+      "verifiable": {
+        "title": "End-to-End Verifiable",
+        "desc": "Verify your vote was recorded correctly and included in the final tally without revealing your choice."
+      },
+      "immutable": {
+        "title": "Immutable Ledger",
+        "desc": "Powered by distributed ledger technology to prevent any unauthorized modification of election results."
+      },
+      "access": {
+        "title": "Universal Access",
+        "desc": "Vote securely from anywhere in the world, ensuring every citizen's voice can be heard."
+      }
+    }
+  },
+  "auth": {
+    "title": "Secure Vote",
+    "subtitle": "Enter your credentials to continue",
+    "email": "Email Address",
+    "password": "Password",
+    "signIn": "Sign In",
+    "demoAccounts": "Quick Access Demo Accounts",
+    "error": "Invalid email or password. Use admin@a.com, voter1@v.com, or voter2@v.com with password \"q\"."
+  },
+  "dashboard": {
+    "title": "Active Elections",
+    "subtitle": "Cast your vote in ongoing democratic processes.",
+    "createElection": "Create Election",
+    "noElections": "No active elections found.",
+    "voteCast": "Vote Cast",
+    "castVote": "Cast Vote",
+    "viewResults": "View Results",
+    "choicesCast": "choices cast",
+    "ends": "Ends",
+    "loading": "Loading Elections...",
+    "voting": {
+      "submitting": "Submitting your vote...",
+      "success": "Vote cast successfully!",
+      "error": "Failed to cast vote. Please try again.",
+      "position": "Position",
+      "of": "of",
+      "selectCandidate": "Select your preferred candidate for this position.",
+      "back": "Back",
+      "next": "Next",
+      "confirm": "Confirm & Submit",
+      "verifying": "Verifying..."
+    },
+    "admin": {
+      "start": "Start Election",
+      "end": "End Election",
+      "reopen": "Reopen Election",
+      "addPosition": "Add Position",
+      "addCandidate": "Add Candidate",
+      "creating": "Creating election...",
+      "success": "Election created successfully!",
+      "error": "Failed to create election.",
+      "createTitle": "Create New Election",
+      "electionTitle": "Election Title",
+      "electionDesc": "Description",
+      "positions": "Positions & Candidates",
+      "positionTitle": "Position Title",
+      "candidateName": "Candidate Name",
+      "launch": "Launch Election"
+    }
+  },
+  "results": {
+    "title": "Platform Analytics",
+    "subtitle": "Real-time overview of platform activity and democratic participation.",
+    "stats": {
+      "total": "Total Elections",
+      "active": "Active Now",
+      "completed": "Completed",
+      "votes": "Total Votes Cast"
+    },
+    "distribution": "Election Distribution",
+    "activity": "Recent Activity",
+    "noActivity": "No activity recorded yet.",
+    "winner": "Winner"
+  },
+  "security": {
+    "title": "Security Protocol",
+    "subtitle": "How we protect the integrity of every single vote.",
+    "features": {
+      "encryption": {
+        "title": "End-to-End Encryption",
+        "desc": "Every vote is encrypted from the moment it leaves your device until it is counted. This ensures that only authorized systems can access the vote data."
+      },
+      "ledger": {
+        "title": "Immutable Ledger",
+        "desc": "We use blockchain-inspired technology to create an immutable record of all votes. Once a vote is cast, it cannot be altered or deleted by anyone, including administrators."
+      },
+      "identity": {
+        "title": "Identity Verification",
+        "desc": "Our multi-factor authentication and identity verification protocols ensure that every voter is who they say they are, preventing duplicate voting and identity theft."
+      },
+      "privacy": {
+        "title": "Zero-Knowledge Proofs",
+        "desc": "We verify that your vote is valid without ever seeing who you voted for. This maintains complete anonymity while guaranteeing the integrity of the count."
+      }
+    },
+    "audit": {
+      "title": "Auditable & Transparent",
+      "desc": "While individual votes are anonymous, the entire system is designed for public auditability. Anyone can verify that the final count matches the sum of all encrypted votes without compromising voter privacy.",
+      "nodes": "Distributed Nodes",
+      "global": "Global Verification",
+      "keys": "Multi-Key Sharding"
+    }
+  },
+  "accessibility": {
+    "readerEnabled": "Screen reader enabled. Press space to navigate elements.",
+    "readerDisabled": "Screen reader disabled.",
+    "langSwitch": "Switch to {lang}",
+    "clicked": "Clicked",
+    "button": "Button: {text}"
+  }
+}
