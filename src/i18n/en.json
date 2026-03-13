@@ -25,25 +25,25 @@
     "brandSymbol": "VeriVote Brand Symbol"
   },
   "landing": {
-    "tagline": "The Future of Democracy",
-    "title": "Secure. Transparent.",
-    "unstoppable": "Unstoppable.",
-    "description": "VeriVote leverages advanced cryptographic verification to ensure every vote is counted exactly as cast.",
+    "tagline": "Empowering Democratic Participation",
+    "title": "Secure Votes",
+    "unstoppable": "For a Better Nation.",
+    "description": "VeriVote is a real-time online voting platform built for transparent, accessible elections — supporting multiple languages and enabling every eligible voter to participate in democracy.",
     "getStarted": "Get Started",
     "learnMore": "Learn More",
     "register": "Register",
     "features": {
       "verifiable": {
-        "title": "End-to-End Verifiable",
-        "desc": "Verify your vote was recorded correctly and included in the final tally without revealing your choice."
+        "title": "Transparent Vote Receipts",
+        "desc": "Every vote you cast creates a unique receipt document in the database, giving you confidence that your participation was registered — without exposing your specific choices to other voters."
       },
       "immutable": {
-        "title": "Immutable Ledger",
-        "desc": "Powered by distributed ledger technology to prevent any unauthorized modification of election results."
+        "title": "Tamper-Resistant Records",
+        "desc": "All election data lives in a structured, cloud-hosted database with organised access controls. Results are computed openly and stream to every connected device the moment they change."
       },
       "access": {
-        "title": "Universal Access",
-        "desc": "Vote securely from anywhere in the world, ensuring every citizen's voice can be heard."
+        "title": "Built for Everyone",
+        "desc": "VeriVote supports English, Hindi, and Tamil with a fully responsive interface that works on any device — ensuring no voter is left behind regardless of language or location."
       }
     }
   },
@@ -109,35 +109,39 @@
     "distribution": "Election Distribution",
     "activity": "Recent Activity",
     "noActivity": "No activity recorded yet.",
-    "winner": "Winner"
+    "winner": "Winner",
+    "completedResults": "Completed Election Results",
+    "viewDetails": "View Details",
+    "electionResults": "Election Results",
+    "noVotesCast": "No votes cast yet"
   },
   "security": {
-    "title": "Security Protocol",
-    "subtitle": "How we protect the integrity of every single vote.",
+    "title": "How VeriVote Protects Your Vote",
+    "subtitle": "A transparent look at what we have built, how it works today, and where we are taking it.",
     "features": {
       "encryption": {
-        "title": "End-to-End Encryption",
-        "desc": "Every vote is encrypted from the moment it leaves your device until it is counted. This ensures that only authorized systems can access the vote data."
+        "title": "Real-Time Transparency",
+        "desc": "Election data and live vote tallies are stored in a cloud database and streamed to every connected device instantly. There is no hidden tallying process — results update openly as votes are cast, and anyone can view them the moment an election closes."
       },
       "ledger": {
-        "title": "Immutable Ledger",
-        "desc": "We use blockchain-inspired technology to create an immutable record of all votes. Once a vote is cast, it cannot be altered or deleted by anyone, including administrators."
+        "title": "Unique Vote Receipts",
+        "desc": "Every vote creates a unique receipt document in the database, structurally tied to the voter and the specific election. This ensures the same account cannot vote twice, and keeps participation records separate from the running tally for clear auditability."
       },
       "identity": {
-        "title": "Identity Verification",
-        "desc": "Our multi-factor authentication and identity verification protocols ensure that every voter is who they say they are, preventing duplicate voting and identity theft."
+        "title": "Role-Based Access Control",
+        "desc": "VeriVote enforces a strict separation between admin and voter roles. Only admins can create elections, change their status, or access management controls. Voters can cast ballots in active elections and view results once closed. Neither role can access the other's functions."
       },
       "privacy": {
-        "title": "Zero-Knowledge Proofs",
-        "desc": "We verify that your vote is valid without ever seeing who you voted for. This maintains complete anonymity while guaranteeing the integrity of the count."
+        "title": "Open, Auditable Results",
+        "desc": "When an election closes, the full breakdown — every position, every candidate, vote counts, and percentages — is immediately and publicly accessible to all users. There is no information asymmetry. What administrators see is exactly what every voter sees."
       }
     },
     "audit": {
-      "title": "Auditable & Transparent",
-      "desc": "While individual votes are anonymous, the entire system is designed for public auditability. Anyone can verify that the final count matches the sum of all encrypted votes without compromising voter privacy.",
-      "nodes": "Distributed Nodes",
-      "global": "Global Verification",
-      "keys": "Multi-Key Sharding"
+      "title": "Built for Production Trust",
+      "desc": "VeriVote is a fully functional prototype demonstrating the complete voting workflow. The production roadmap replaces the demo authentication layer with verified Firebase Authentication, enforces strict per-user database security rules, and moves vote submission to server-side Cloud Functions to eliminate any possibility of client-side manipulation. The architecture is already designed to accept these upgrades without restructuring the core application.",
+      "nodes": "Firebase Cloud Infrastructure",
+      "global": "Real-Time Sync",
+      "keys": "Role-Verified Access"
     }
   },
   "accessibility": {
