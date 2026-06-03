@@ -1,4 +1,4 @@
-import React, { Component, ErrorInfo, ReactNode } from 'react';
+import React, { Component, ErrorInfo, ReactNode, useState } from 'react';
 import { AuthProvider, useAuth } from './AuthContext';
 import { Layout } from './components/Layout';
 import { LandingPage } from './components/LandingPage';
@@ -6,9 +6,7 @@ import { Dashboard } from './components/Dashboard';
 import { AuthPage } from './components/AuthPage';
 import { ResultsPage } from './components/ResultsPage';
 import { SecurityPage } from './components/SecurityPage';
-import { useState } from 'react';
 
-// Error Boundary Component
 interface Props {
   children: ReactNode;
 }
@@ -18,10 +16,10 @@ interface State {
   error: Error | null;
 }
 
-class ErrorBoundary extends Component<any, any> {
-  public state: any = {
+class ErrorBoundary extends Component<Props, State> {
+  public state: State = {
     hasError: false,
-    error: null
+    error: null,
   };
 
   public static getDerivedStateFromError(error: Error): State {
@@ -39,9 +37,9 @@ class ErrorBoundary extends Component<any, any> {
           <div className="bg-bg-card p-10 rounded-[2.5rem] shadow-xl max-w-md w-full text-center border border-border-main">
             <h2 className="text-2xl font-bold mb-4 text-text-main">Something went wrong</h2>
             <p className="text-text-muted mb-8">
-              {this.state.error?.message.startsWith('{') 
-                ? "A security or database error occurred. Please check your permissions."
-                : "An unexpected error occurred. Please try refreshing the page."}
+              {this.state.error?.message.startsWith('{')
+                ? 'A security or database error occurred. Please check your permissions.'
+                : 'An unexpected error occurred. Please try refreshing the page.'}
             </p>
             <button
               onClick={() => window.location.reload()}

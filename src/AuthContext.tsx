@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
+import { Timestamp } from 'firebase/firestore';
 import { UserProfile } from './types';
 import en from './i18n/en.json';
 import ta from './i18n/ta.json';
@@ -53,7 +54,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         email: parsed.email,
         displayName: parsed.email.split('@')[0],
         role: parsed.email === 'admin@a.com' ? 'admin' : 'voter',
-        createdAt: { toDate: () => new Date() } as any,
+        createdAt: { toDate: () => new Date() } as unknown as Timestamp,
       });
     }
     setLoading(false);
@@ -96,7 +97,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       email: newUser.email,
       displayName: newUser.email.split('@')[0],
       role: newUser.email === 'admin@a.com' ? 'admin' : 'voter',
-      createdAt: { toDate: () => new Date() } as any,
+      createdAt: { toDate: () => new Date() } as unknown as Timestamp,
     });
   };
 
